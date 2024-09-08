@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700;900&family=Poppins:wght@200;300;400;600&family=Quicksand:wght@300;400;500;600;700&family=Urbanist:wght@300;400;500;600;700;800;900&display=swap");
 *{
     margin: 0;
     padding: 0;
@@ -18,6 +18,7 @@ p,li,a{
     font-family: "Urbanist", sans-serif;
     font-weight: 400;
     color: var(--para-color);
+    line-height: 1.5;
 }
 li{
     list-style: none;
@@ -51,8 +52,26 @@ a{
 }
 .grid-two--cols{
     grid-template-columns: repeat(2,1fr);
-    
 }
+/* ? module / reusable ! */
+
+.btn{
+     display: inline-block;
+     background-color: var(--main-color);
+     color: var(--white-color);
+     border-radius: 0.6rem;
+     padding: 1.2rem 3.2rem;
+     -webkit-border-radius: 0.6rem;
+     -moz-border-radius: 0.6rem;
+     -ms-border-radius: 0.6rem;
+     -o-border-radius: 0.6rem;
+}
+.btn:hover{
+    background-color: var(--bnt-hover-bg-color);
+    cursor: pointer;
+    box-shadow: var(--btn-box-shadow);
+}
+
 
 
 /***** navbar Section *****/ 
@@ -91,8 +110,96 @@ a{
         width: 100%;
     }
  }
-
-
-
-
 /***** End navbar Section *****/
+
+/***** hero Section *****/ 
+main{
+    position: relative;
+    background-image: linear-gradient(
+      to top right,
+      #3d86fa,
+      #4484fb,
+      #679eff,
+      #b3d2ff,
+      #ebf3fe
+    );
+}
+.section-hero .grid{
+    align-items: center;
+    gap: 0.64rem;
+    & .hero-subheading{
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-size: 1.7rem;
+        word-spacing: .2rem;
+        color: var(--hero-heading-color);
+        font-weight: 700;
+    }
+    & .hero-heading{
+        font-size: 5.8rem;
+        font-family: "jost";
+        color: var(--hero-heading-color);
+        font-weight: 900;
+        line-height: 1.5;
+    }
+    & .hero-para{
+        color: var(--white-color);
+        margin: 2rem 0  4.2rem 0;
+    }
+}
+.section-hero--image img{
+    width: 100%;
+    height: auto;
+    transform: scalex(-1);
+    -webkit-transform: scalex(-1);
+    -moz-transform: scalex(-1);
+    -ms-transform: scalex(-1);
+    -o-transform: scalex(-1);
+}
+/* shape divider */
+.custom-shape-divider-bottom-1725178941 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1725178941 svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 118px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1725178941 .shape-fill {
+    fill: #FFFFFF;
+}
+ /***** End Section *****/
+
+/*****    start about    Section *****/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** about End        Section *****/
+
+ 
