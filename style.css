@@ -41,7 +41,7 @@ a{
   --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --footer-bg-color: #040d12;
 }
-/* layout */
+/*! layout */
 .container{
     max-width: 144rem;
     margin: 0 auto;
@@ -52,6 +52,20 @@ a{
 }
 .grid-two--cols{
     grid-template-columns: repeat(2,1fr);
+}
+.grid-three-cols{
+    grid-template-columns: repeat(3,1fr);
+}
+.fa-solid{
+    padding: 2.4rem;
+    background-color: var(--supporting-color);
+    font-size: 2.4rem;
+    border-radius: 50%;
+    color: var(--hero-heading-color);
+}
+.grid-four--cols{
+    /* grid-template-columns: repeat(4,1fr); */
+
 }
 /* ? module / reusable ! */
 
@@ -71,8 +85,18 @@ a{
     cursor: pointer;
     box-shadow: var(--btn-box-shadow);
 }
-
-
+.section-common-heading{
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.section-common-subheading{
+    color: var(--heading-color);
+}
+.section-common-tittle{
+    font-size: 2rem;
+    margin: 2.4rem 0 1.2rem 0;
+}
 
 /***** navbar Section *****/ 
 .section-navbar{
@@ -127,7 +151,8 @@ main{
 .section-hero .grid{
     align-items: center;
     gap: 0.64rem;
-    & .hero-subheading{
+
+    & .hero-subheading {
         text-transform: uppercase;
         letter-spacing: .2rem;
         font-size: 1.7rem;
@@ -174,32 +199,47 @@ main{
     height: 118px;
     transform: rotateY(180deg);
 }
-
 .custom-shape-divider-bottom-1725178941 .shape-fill {
     fill: #FFFFFF;
 }
  /***** End Section *****/
 
 /*****    start about    Section *****/ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.section-about img{
+    padding: 2.4rem;
+    background-color: var(--supporting-color);
+    width: 15rem;
+    height: auto;
+    border-radius: 50%;
+    transition:all 0.3s linear;
+}
+.section-about .about-div{
+    text-align: center;
+}
+.section-about .grid{
+    gap: 6.4rem;
+}
+ .icon:hover > img{
+     transform: rotate(360deg);
+    background: linear-gradient(to right, #0575e6, #021b79)
+}
 /***** about End        Section *****/
+/***** course Section *****/ 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** End course Section *****/
